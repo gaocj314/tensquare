@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:12000
+      name: spit
+      profile: dev
+      label: master
