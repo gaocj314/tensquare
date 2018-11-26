@@ -33,7 +33,7 @@
                 <configuration>
                     <imageName>192.168.232.134:5000/${project.artifactId}:${project.version}
                     </imageName>
-                    <baseImage>jdk1.8</baseImage>
+                    <baseImage>dockerjdk8</baseImage>
                     <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
                         <resource>
