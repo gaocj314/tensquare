@@ -31,9 +31,12 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <imageName>192.168.232.134:5000/${project.artifactId}:${project.version}
+                    <!-- 生成docker push 192.168.232.135:5000/dockerjdk8:1.8 -->
+                    <imageName>192.168.232.135:5000/${project.artifactId}:${project.version}
                     </imageName>
+                    <!--  FROM dockerjdk8 -->
                     <baseImage>dockerjdk8</baseImage>
+                    <!--  ENTRYPOINT ["java","-jar","app.jar"] -->
                     <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
                         <resource>
@@ -42,7 +45,7 @@
                             <include>${project.build.finalName}.jar</include>
                         </resource>
                     </resources>
-                    <dockerHost>http://192.168.232.134:2375</dockerHost>
+                    <dockerHost>http://192.168.232.135:2375</dockerHost>
                 </configuration>
             </plugin>
         </plugins>
