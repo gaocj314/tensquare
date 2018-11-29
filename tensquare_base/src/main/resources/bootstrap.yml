@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: http://192.168.232.137:12000
+      uri: http://192.168.232.138:12000
       name: base
       profile: dev
       label: master
