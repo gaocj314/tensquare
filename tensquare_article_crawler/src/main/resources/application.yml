@@ -1,0 +1,10 @@
+server:
+  port: 9014
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tensquare_article?characterEncoding=UTF8
+    username: root
+    password: gaochaojie
+redis:
+  host: 127.0.0.1

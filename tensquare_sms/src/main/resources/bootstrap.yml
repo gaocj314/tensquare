@@ -3,5 +3,10 @@ spring:
     config:
       uri: http://localhost:12000
       name: sms
-      profile: dev
       label: master
+aliyun:
+  sms:
+    accessKeyId: LTAIy10D7H4LvqfA
+    accessKeySecret: 1EO5Jl99nKKxJlY2uzZOKo9GD29VZo
+    template_code: SMS_135755624
+    sign_name: 黑马mcy

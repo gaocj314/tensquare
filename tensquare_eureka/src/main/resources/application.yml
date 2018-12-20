@@ -7,5 +7,5 @@ eureka:
   client:
     registerWithEureka: false #是否将自己注册到Eureka服务中，本身就是所有无需注册
     fetchRegistry: false      #是否从Eureka中获取注册信息
-    serviceUrl:               #Eureka客户端与Eureka服务端进行交互的地址
-      defaultZone: http://192.168.232.138:${server.port}/eureka/
+  serviceUrl:               #Eureka客户端与Eureka服务端进行交互的地址
+    defaultZone: http://127.0.0.1:6868/eureka/ #如果是集群配置,指向其他的eureka地址

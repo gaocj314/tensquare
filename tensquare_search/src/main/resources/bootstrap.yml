@@ -3,5 +3,4 @@ spring:
     config:
       uri: http://localhost:12000
       name: search
-      profile: dev
       label: master

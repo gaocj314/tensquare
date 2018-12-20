@@ -1,0 +1,11 @@
+ai:
+  #语料库汇总文本文件
+  wordLib : E:\\article.txt
+  #语料库目录
+  dataPath : E:\\article
+  #词向量模型
+  vecModel: E:\\article.vecmodel
+  #神经网络articlework卷积模型
+  cnnModel: E:\\article.cnnmodel
+  #工作目录
+  workPath: E:\articlework

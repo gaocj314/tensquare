@@ -48,26 +48,26 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
-    <build>
+    <!--<build>
         <finalName>app</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!-- docker的maven插件，官网：
-            https://github.com/spotify/docker-maven-plugin -->
+            &lt;!&ndash; docker的maven插件，官网：
+            https://github.com/spotify/docker-maven-plugin &ndash;&gt;
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <!-- 生成docker push 192.168.232.135:5000/dockerjdk8:1.8 -->
+                    &lt;!&ndash; 生成docker push 192.168.232.135:5000/dockerjdk8:1.8 &ndash;&gt;
                     <imageName>192.168.232.135:5000/${project.artifactId}:${project.version}
                     </imageName>
-                    <!--  FROM dockerjdk8 -->
+                    &lt;!&ndash;  FROM dockerjdk8 &ndash;&gt;
                     <baseImage>dockerjdk8</baseImage>
-                    <!--  ENTRYPOINT ["java","-jar","app.jar"] -->
+                    &lt;!&ndash;  ENTRYPOINT ["java","-jar","app.jar"] &ndash;&gt;
                     <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
                         <resource>
@@ -80,5 +80,5 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 </project>

@@ -1,17 +1,3 @@
-server:
-  port: 12000
 spring:
-  application:
-    name: tensquare-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://gitee.com/chuanzhidongping/config58.git
-  rabbitmq:
-    host: 192.168.232.129
-management: #暴露触发消息总线的地址
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
+  profiles:
+    active: test

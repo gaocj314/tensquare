@@ -1,0 +1,11 @@
+server:
+  port: 9015
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tensquare_user?characterEncoding=UTF8
+    username: root
+    password: gaochaojie
+redis:
+  host: 192.168.1.152
+savePath: /Users/gaocj/Documents/work-resource/common/userImg
